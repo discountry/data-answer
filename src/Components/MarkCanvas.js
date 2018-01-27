@@ -2,10 +2,6 @@ import React, { Component } from "react"
 import { Rect, Group, Stage, Layer, Image } from "react-konva"
 import Neo from './matrix.jpg'
 
-function getDistance(p1, p2) {
-  return Math.sqrt(Math.pow((p2.x - p1.x), 2) + Math.pow((p2.y - p1.y), 2))
-}
-
 class MyRect extends React.Component {
   render() {
       return (
