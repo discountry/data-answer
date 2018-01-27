@@ -7,7 +7,7 @@ export default class QuizCard extends Component {
     return (
       <WingBlank size="lg">
         <WhiteSpace size="lg" />
-        <Link to="/answer">
+        <Link to="/one">
           <Card>
             <Card.Header
               title={this.props.title}

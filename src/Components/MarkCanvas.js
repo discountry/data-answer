@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import { Rect, Group, Stage, Layer, Image } from "react-konva"
-import Neo from './matrix.jpg'
 
 class MyRect extends React.Component {
   render() {
@@ -24,7 +23,7 @@ class VaderImage extends React.Component {
   }
   componentDidMount() {
     // eslint-disable-next-line
-    this.state.image.src = Neo
+    this.state.image.src = this.props.imgUrl
     // eslint-disable-next-line
     this.state.image.onload = () => {
       // calling set state here will do nothing
@@ -52,7 +51,7 @@ class MarkCanvas extends Component {
     return (
       <Stage width={window.innerWidth} height={350}>
         <Layer>
-          <VaderImage />
+          <VaderImage imgUrl={this.props.imgUrl} />
           <MyRect />
         </Layer>
       </Stage>
