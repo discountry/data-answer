@@ -7,8 +7,8 @@ class MyRect extends React.Component {
           <Group>
               <Rect
                   ref="rect"
-                  width="70"
-                  height="80"
+                  width="80"
+                  height="90"
                   stroke='red'
                   draggable="true"
               />
